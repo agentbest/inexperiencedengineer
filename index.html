@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未経験からITエンジニアへ - キャリアチェンジサポート</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .tech-icon {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .success-quote {
+            position: relative;
+            padding: 2rem;
+            background: #f8fafc;
+            border-left: 4px solid #667eea;
+        }
+        
+        .success-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #667eea;
+            position: absolute;
+            top: 0;
+            left: 1rem;
+            line-height: 1;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .step-number {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+         {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header/Hero Section -->
+    <div class="gradient-bg text-white min-h-screen flex items-center">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    未経験から<br>
+                    <span class="text-yellow-300">ITエンジニア</span>へ
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                    学歴・経歴は問いません。<br>
+                    あなたの「やる気」と「人柄」を重視する企業が待っています。
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                    <div class="bg-white bg-opacity-20 rounded-full px-6 py-3 text-lg">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        完全無料サポート
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-full px-6 py-3 text-lg">
+                        <i class="fas fa-users mr-2"></i>
+                        専門コンサルタント対応
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-full px-6 py-3 text-lg">
+                        <i class="fas fa-building mr-2"></i>
+                        厳選企業のみ紹介
+                    </div>
+                </div>
+                <button class="cta-button text-white px-12 py-4 rounded-full text-xl font-semibold">
+                    <i class="fas fa-rocket mr-2"></i>
+                    無料転職相談を始める
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                    こんな不安を抱えていませんか？
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-red-50 p-8 rounded-xl border-l-4 border-red-400">
+                        <div class="text-red-400 text-4xl mb-4">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">未経験だから無理だと思っている</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            「ITエンジニアは理系じゃないと無理」「プログラミング経験がないから諦めるしかない」と思っていませんか？
+                        </p>
+                    </div>
+                    <div class="bg-orange-50 p-8 rounded-xl border-l-4 border-orange-400">
+                        <div class="text-orange-400 text-4xl mb-4">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">何から始めればいいかわからない</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            転職活動の進め方、必要なスキル、企業選びの基準など、一人では判断できないことばかり。
+                        </p>
+                    </div>
+                    <div class="bg-yellow-50 p-8 rounded-xl border-l-4 border-yellow-400">
+                        <div class="text-yellow-600 text-4xl mb-4">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">年齢的に遅いのではないか</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            「20代後半、30代では遅すぎる」と心配していませんか？実は多くの企業がポテンシャル採用を行っています。
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-8 rounded-xl border-l-4 border-blue-400">
+                        <div class="text-blue-400 text-4xl mb-4">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">今の仕事を続けながらできるか不安</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            働きながらの転職活動は時間的制約もあり、効率的に進める方法がわからない。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">
+                    その不安、すべて解決できます！
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                    IT業界は深刻な人材不足。だからこそ「ポテンシャル採用」が盛ん。<br>
+                    未経験でも、あなたの意欲と人柄を評価してくれる企業が確実に存在します。
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+                        <div class="tech-icon mb-6">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">市場需要の高さ</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            IT人材不足は2030年まで続くと予測され、未経験からでも積極的に採用する企業が増加しています。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+                        <div class="tech-icon mb-6">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">充実した研修制度</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            多くの企業が未経験者向けの研修プログラムを用意。入社後にしっかりとスキルアップできる環境があります。
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+                        <div class="tech-icon mb-6">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">人物重視の採用</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            学歴や経験よりも、コミュニケーション能力や学習意欲、チームワークを重視する企業が多数存在します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+                    私たちが選ばれる理由
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-purple-500 to-blue-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-user-tie text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">実績豊富な専門コンサル</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            未経験エンジニア転職に特化した、豊富な実績を持つ専門コンサルタントがあなたを担当。一人ひとりの状況に合わせた最適なキャリアプランを提案します。
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-green-500 to-blue-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-handshake text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">人物重視の厳選企業</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            学歴や経歴ではなく、人柄や意欲を重視する企業のみを厳選してご紹介。あなたの可能性を正しく評価してくれる企業と出会えます。
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-gradient-to-r from-red-500 to-pink-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-network-wired text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">IT企業との太いパイプ</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            長年培ったIT企業とのネットワークにより、他社では紹介できない独自ルートや非公開求人を多数保有。選択肢の幅が大きく広がります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">
+                    転職成功者の声
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16">
+                    様々な業界・職種から、ITエンジニアへの転職を成功させた方々の体験談
+                </p>
+
+                <div class="space-y-12">
+                    <div class="success-quote rounded-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-server text-white text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="mb-4">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        インフラエンジニア
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-lg mb-4 leading-relaxed pl-8">
+                                    一人で転職活動していた期間が8ヶ月、なかなか上手くいかないなかでサービスに登録しました。キャリアアドバイザーとの面談で転職活動の軸が定まったことで、登録から1ヶ月で転職に成功しました。
+                                </p>
+                                <div class="text-gray-500 pl-8">
+                                    <strong>営業職 → インフラエンジニア（28歳・男性）</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="success-quote rounded-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-code text-white text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="mb-4">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        Webエンジニア
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-lg mb-4 leading-relaxed pl-8">
+                                    キャリアアドバイザーの方が私に合いそうな企業を紹介してくださり、今の企業と出会うことができました。IT業界でどの企業を選ぶべきかの判断材料も少なかったので、一人で転職活動をしていたら出会えなかったと思います。
+                                </p>
+                                <div class="text-gray-500 pl-8">
+                                    <strong>事務職 → Webエンジニア（31歳・女性）</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="success-quote rounded-lg">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-mobile-alt text-white text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <div class="mb-4">
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+                                        システムエンジニア
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-lg mb-4 leading-relaxed pl-8">
+                                    34歳での転職で年齢的に不安でしたが、コンサルタントの方が「あなたの営業経験は必ず活かせる」と背中を押してくれました。現在は要件定義から携わり、やりがいのある毎日を送っています。
+                                </p>
+                                <div class="text-gray-500 pl-8">
+                                    <strong>営業職 → システムエンジニア（34歳・男性）</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+                    転職成功までの流れ
+                </h2>
+
+                <div class="space-y-12">
+                    <div class="flex items-center gap-8">
+                        <div class="step-number flex-shrink-0">1</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">無料相談・カウンセリング</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                まずはあなたの現状や希望をじっくりとお聞きします。IT業界への疑問や不安もお気軽にご相談ください。専門コンサルタントが丁寧にお答えします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8">
+                        <div class="step-number flex-shrink-0">2</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">キャリアプラン設計</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                あなたの経験や適性を分析し、最適なキャリアパスを一緒に設計。どの分野のエンジニアを目指すべきか、必要なスキルは何かを明確化します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8">
+                        <div class="step-number flex-shrink-0">3</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">企業紹介・マッチング</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                厳選された人物重視の企業の中から、あなたにぴったりの求人をご紹介。企業の詳細情報や面接官の人柄まで、詳しくお伝えします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8">
+                        <div class="step-number flex-shrink-0">4</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">面接対策・サポート</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                履歴書・職務経歴書の作成から面接対策まで、きめ細やかにサポート。未経験者がアピールすべきポイントを具体的にアドバイスします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8">
+                        <div class="step-number flex-shrink-0">5</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">内定・入社サポート</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                内定後の条件交渉から入社日の調整、現職の退職手続きのアドバイスまで、トータルでサポート。安心して新しいキャリアをスタートできます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white text-center">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    あなたの新しいキャリア、<br>
+                    今すぐスタートしませんか？
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                    相談は完全無料。まずは気軽にお話を聞かせてください。<br>
+                    あなたの可能性を一緒に探しましょう。
+                </p>
+                
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 mb-12">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl font-bold mb-2">3,000+</div>
+                            <div class="opacity-80">転職成功実績</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">95%</div>
+                            <div class="opacity-80">満足度</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">平均1.5ヶ月</div>
+                            <div class="opacity-80">転職成功期間</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-yellow-400 text-gray-900 px-12 py-5 rounded-full text-xl font-bold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-phone mr-3"></i>
+                    今すぐ無料相談を申し込む
+                </button>
+                
+                <p class="mt-6 opacity-80">
+                    <i class="fas fa-clock mr-2"></i>
+                    24時間以内にご連絡します
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">
+                    よくあるご質問
+                </h2>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 border-b bg-gray-50">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                                本当に未経験でもITエンジニアになれますか？
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                はい、可能です。IT業界は深刻な人材不足のため、多くの企業が「ポテンシャル採用」を積極的に行っています。重要なのは学習意欲とコミュニケーション能力です。実際に当サービスを利用して、様々な業界から転職成功された方が数多くいらっしゃいます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 border-b bg-gray-50">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                                30代でも転職は可能でしょうか？
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                30代の転職実績も豊富にあります。むしろ30代の方は前職での経験や社会人としての基礎能力が評価される傾向があります。特に営業や接客業経験のある方は、コミュニケーション能力の高さが重宝されます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 border-b bg-gray-50">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                                転職活動にはどれくらいの期間がかかりますか？
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                個人差はありますが、平均的には1.5〜3ヶ月程度です。早い方では1ヶ月以内に決まる場合もあります。現在の転職市場や個人の状況により変動しますが、専門コンサルタントが効率的な転職活動をサポートします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 border-b bg-gray-50">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                                事前にプログラミングの勉強は必要ですか？
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                必須ではありませんが、学習意欲を示すために基礎的な知識があると有利です。ただし、独学で悩むよりも、まず転職相談でキャリアの方向性を決めてから効率的に学習することをお勧めします。必要なスキルについてもアドバイスいたします。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6 border-b bg-gray-50">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                                サービス利用料金はかかりますか？
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 leading-relaxed">
+                                完全無料でご利用いただけます。相談から転職成功まで、一切費用はかかりません。私たちは採用企業からの成功報酬で運営しているため、求職者の方から料金をいただくことはありません。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="py-16 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">
+                あなたの未来を変える一歩を、<br>
+                今日から始めませんか？
+            </h2>
+            <button class="cta-button text-white px-10 py-4 rounded-full text-lg font-semibold mb-8">
+                <i class="fas fa-comments mr-2"></i>
+                無料相談に申し込む
+            </button>
+            <div class="text-gray-400 text-sm">
+                <p>&copy; 2024 IT Career Change Support. All rights reserved.</p>
+                <p class="mt-2">
+                    <i class="fas fa-shield-alt mr-2"></i>
+                    あなたの個人情報は厳重に管理されます
+                </p>
+            </div>
+        </div>
+    </section>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9706565e581bded7","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDmEugL3tzev4FtjV7e52YaFY5GuUFjieNRknXZTXyRal%2B66jTD7086vdBePOwMgIUAqq4xiTzzcodsnl5zsA75E1%2BSs%2FJk%2FnFT6cltDpR09HBeMt05aTkPyh23QQucuFCmlZ5f9iLYTRDvKd35LovcGQ6aF%2FTLEZgpzbdvszW%2BTTC2TkOJphQ0HWoh%2FLWVdzGbshichxQA3N9WdjCvJzNbIz9DGTG6mAzizCHJVJzwszGoFmk3WP8BFHBJkwEadEnndRY0aFfsJGqDVmx4qsUIbVw2jz%2BNBRpNtRCocxIt8jFKvtuBGUJpvyiwRuuBPecdY2I3cezwo%2BDYTbZS2N8bNiFDNWc4c9azLsPz42x81FX41omr%2FsogndmZjfthuh2beaDOMA2Wuvsy80uZ4%2F%2BL%2BCHRiRElJGVbdp4dQ0rqJkVSDh5eE9pu3mcVd4YXZ2mHIk0UW4prIoHP5pnI63ciHpaLYTJyojzx5CNv%2FmQjet1lVOEMANcZ3sfR%2FuidMJoquSD8Hu6gHH%2B9pktNloVnY%3D";
+        window.__genspark_locale = "ja-JP";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDmEugL3tzev4FtjV7e52YaFY5GuUFjieNRknXZTXyRal+66jTD7086vdBePOwMgIUAqq4xiTzzcodsnl5zsA75E1+Ss/Jk/nFT6cltDpR09HBeMt05aTkPyh23QQucuFCmlZ5f9iLYTRDvKd35LovcGQ6aF/TLEZgpzbdvszW+TTC2TkOJphQ0HWoh/LWVdzGbshichxQA3N9WdjCvJzNbIz9DGTG6mAzizCHJVJzwszGoFmk3WP8BFHBJkwEadEnndRY0aFfsJGqDVmx4qsUIbVw2jz+NBRpNtRCocxIt8jFKvtuBGUJpvyiwRuuBPecdY2I3cezwo+DYTbZS2N8bNiFDNWc4c9azLsPz42x81FX41omr/sogndmZjfthuh2beaDOMA2Wuvsy80uZ4/+L+CHRiRElJGVbdp4dQ0rqJkVSDh5eE9pu3mcVd4YXZ2mHIk0UW4prIoHP5pnI63ciHpaLYTJyojzx5CNv/mQjet1lVOEMANcZ3sfR/uidMJoquSD8Hu6gHH+9pktNloVnY=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
